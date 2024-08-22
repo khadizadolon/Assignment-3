@@ -32,54 +32,123 @@
     ></script>
   </head>
   <body class="font-manrope">
-    <header>
-      <nav>
+    <header class="">
+        <!-- navbar starts here -->
+      <nav class="lg:w-10/12 mx-auto pt-12 mb-[60px]">
         <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          <div class="navbar-start w-[40%]">         
+            <a class="text-3xl flex items-center gap-2 text-[#212121] font-extrabold ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 bg-[#ABEF5F] rounded-full  p-[5px]"
               >
-                <li><a>Home</a></li>
-                <li><a>Service</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
-              </ul>
-            </div>
-            <a class=" text-xl">Rinterio</a>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+              Rinterio</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a>Home</a></li>
-              <li><a>Service</a></li>
-              <li><a >Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
+              <li><a class="font-extrabold text-[#494949]">Home</a></li>
+              <li><a class="text-[#737373]">Service</a></li>
+              <li><a class="text-[#737373]">Portfolio</a></li>
+              <li><a a class="text-[#737373]">Blogs</a></li>
+              <li><a a class="text-[#737373]">Contact Us</a></li>
             </ul>
           </div>
-          <div class="navbar-end">
-            <a class="btn">Button</a>
+          <div class="navbar-end gap-4">
+            <a class="btn btn-circle hidden lg:flex text-[#737373] bg-[#FFFFFF]"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+            <a class="btn btn-circle hidden lg:flex text-[#737373] bg-[#FFFFFF]"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <a class="btn rounded-[100px] bg-[#ABEF5F] text-[#1C1C1C]  font-bold text-lg hidden lg:flex"
+              >Book Consult
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 bg-[#1C1C1C] rounded-full p-[6px] text-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <a class="btn btn-circle bg-[#FFFFFF] text-[#737373]" ><i class="fa-solid fa-bars"></i></a>
+              <!-- <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg> -->
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
+            >
+              <li><a  class="font-extrabold text-[#494949]">Home</a></li>
+              <li><a  class="text-[#737373]">Service</a></li>
+              <li><a  class="text-[#737373]">Portfolio</a></li>
+              <li><a  class="text-[#737373]">Blogs</a></li>
+              <li><a  class="text-[#737373]">Contact Us</a></li>
+            </ul>
           </div>
         </div>
+       
       </nav>
+      <!-- banner section -->
+
+       <section class="mb-24 lg:w-10/12 mx-auto">
+        <div>
+            <img class="mx-auto w-[70%] lg:w-[45%]" src="assets/banner.png" alt="">
+            <h1 class="text-[#212121] font-extrabold lg:font-[900] text-[28px] lg:text-6xl text-center w-[80%] mx-auto ">A barn house of this design has a  striking appearance</h1>
+            <p class="text-[#494949] font-medium text-center w-[90%]  lg:w-[75%] mx-auto mt-7 mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            
+            <a class="btn rounded-[100px] bg-[#D1F3AB] text-[#1C1C1C] w-[90%] lg:w-[200px] mx-auto font-bold text-lg  flex"
+              >View Details
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6  bg-[#ABEF5F] rounded-full p-[6px] text-black"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </a>
+           </div>
+    
+       </section>
+
     </header>
     <main></main>
     <footer></footer>
